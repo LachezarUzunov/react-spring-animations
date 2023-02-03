@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
+import AnimatedTitle from "./AnimatedTitle";
 
 const Toggle = () => {
   const [toggled, setIsToggled] = useState(false);
@@ -10,7 +11,7 @@ const Toggle = () => {
 
   return (
     <div>
-      <animated.h1 style={fade}>Hello</animated.h1>
+      <AnimatedTitle style={fade}>Hello</AnimatedTitle>
       <button onClick={() => setIsToggled(!toggled)}>Toggle</button>
     </div>
   );
