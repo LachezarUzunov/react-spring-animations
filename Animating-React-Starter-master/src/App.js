@@ -4,6 +4,7 @@ import Toggle from "./Toggle";
 import logo from "./logo.svg";
 import "./App.css";
 import Nav from "./Nav";
+import Checkout from "./Checkout";
 
 const App = () => {
   const [isNavOpen, setNavOpen] = useState(false);
@@ -22,9 +23,10 @@ const App = () => {
           Menu
         </button>
       </header>
-      <Nav style={navAnimation} />
+      {/* <Nav style={navAnimation} /> */}
       <main>
         <Toggle />
+        <Checkout isOpen={isNavOpen} />
       </main>
     </animated.div>
   );
