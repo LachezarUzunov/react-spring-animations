@@ -1,0 +1,13 @@
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+ul li {
+  padding: 1rem;
+  text-decoration: none;
+}
+nav {
+  background-color: aqua;
+}
