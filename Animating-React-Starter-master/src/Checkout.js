@@ -5,6 +5,7 @@ const Checkout = ({ isOpen }) => {
   const { x } = useSpring({
     x: isOpen ? 0 : 100,
   });
+
   return (
     <div
       className="checkout"
